@@ -1,12 +1,53 @@
-# React + Vite
+# 🎬 Movie Recommendation App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React app that fetches popular movies from **TMDB** and shows **trending movies** based on what users search — powered by **Appwrite**.
 
-Currently, two official plugins are available:
+🌐 **Live Demo:** [movie-recommendation-58c.pages.dev](https://movie-recommendation-58c.pages.dev/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Lists current **popular movies** from TMDB.
+- Tracks user search activity.
+- Displays **trending movies** based on most-searched titles (stored in Appwrite DB).
+- Built with **React**, **Vite**, and **TailwindCSS**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Getting Started
+
+### 1. Clone the project
+
+```bash
+git clone https://github.com/sujoy-kr/react-practice.git
+cd react-practice
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Create a `.env` file
+
+Add this to your `.env` file in the root folder:
+
+```env
+VITE_API_BASE_URL=https://api.themoviedb.org/3/
+VITE_TMDB_API_KEY=your_tmdb_api_key_here
+VITE_APPWRITE_PROJECT_ID=your_appwrite_project_id
+VITE_APPWRITE_DATABASE_ID=your_appwrite_database_id
+VITE_APPWRITE_COLLECTION_ID=your_appwrite_collection_id
+```
+
+### 4. Run the dev server
+
+```bash
+npm run dev
+```
+
+## 📦 Built With
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TMDB API](https://www.themoviedb.org/)
+- [Appwrite](https://appwrite.io/)
